@@ -1,5 +1,21 @@
+# macOS and Windows
 .DS_Store
 Thumbs.db
+
+# Editors
 .vscode/
 .obsidian/
-.obsidian
+
+# Visual Studio
+.vs/
+
+# Build files
+Debug/
+Release/
+x64/
+x86/
+
+# Compiled files
+*.obj
+*.pdb
+*.ilk

@@ -28,7 +28,7 @@
                 <div>
                     <p class="eyebrow">Bradley Musinski Portfolio</p>
                     <h1>Hello, I’m <span>Bradley Musinski</span>.</h1>
-                    <p class="hero-text"> 
+                    <p class="hero-text">
                         Replace this paragraph with a short professional introduction. Explain what kind of developer you are becoming, what you enjoy building, and what you hope to do next.
                     </p>
                     <div class="button-row">
@@ -46,7 +46,9 @@
                 <p class="section-label">About Me</p>
                 <h2>Who I Am as a Developer</h2>
                 <p>
-                    Replace this paragraph with your developer story. You might discuss what led you to programming, the types of problems you enjoy solving, and how your skills have grown during the program.
+                    My passion for game development began with my love for video games, especially the Resident Evil franchise, which inspired me through its immersive atmosphere, storytelling, and gameplay. 
+                    After serving in the U.S. Army, I decided to pursue game development at Full Sail University. I enjoy solving programming challenges, designing gameplay systems, exploring new systems and ideas, and bringing those ideas to life. 
+                    Through my studies and personal projects, I've strengthened my skills in C++, object-oriented programming, and Unreal Engine. My goal is to become a gameplay programmer and create memorable experiences that inspire others just as Resident Evil inspired me.
                 </p>
 
                 <div class="skills-grid">
@@ -69,89 +71,145 @@
         </section>
 
         <section id="projects" class="section alternate-background">
-            <div class="container">
-                <p class="section-label">Featured Work</p>
-                <h2>Projects</h2>
-                <p class="section-intro">
-                    Replace the sample information below with your own work. Add screenshots, explain what each project does, and describe your development process.
-                </p>
+            <section id="projects" class="section alternate-background">
+                <div class="container">
+                    <p class="section-label">Featured Work</p>
 
-                <div class="project-grid">
-                    <article class="project-card">
-                        <img src="images/project-placeholder.svg" alt="Placeholder screenshot for Project One">
-                        <div class="project-content">
-                            <p class="project-type">C++ Console Application</p>
-                            <h3>Project One Title</h3>
-                            <p>
-                                Write a brief overview of the project. Explain the purpose of the program and what the user can do with it.
+                    <div class="projects-heading">
+                        <div>
+                            <h2>Projects</h2>
+                            <p class="section-intro">
+                                Explore my work in C++, Unreal Engine,
+                                and gameplay systems development.
                             </p>
-
-                            <h4>Key Features</h4>
-                            <ul>
-                                <li>Describe one major feature.</li>
-                                <li>Describe another major feature.</li>
-                                <li>Describe your input validation or menu system.</li>
-                            </ul>
-
-                            <h4>What I Learned</h4>
-                            <p>
-                                Explain one challenge you faced, how you solved it, and what you learned from the process.
-                            </p>
-
-                            <div class="project-links">
-                                <a class="text-link" href="https://github.com/USERNAME/REPOSITORY" target="_blank" rel="noopener">View Repository</a>
-                                <a class="text-link" href="https://example.com" target="_blank" rel="noopener">Watch Demo</a>
-                            </div>
                         </div>
-                    </article>
 
-                    <article class="project-card">
-                        <img src="images/project-placeholder.svg" alt="Placeholder screenshot for Project Two">
-                        <div class="project-content">
-                            <p class="project-type">Additional Project</p>
-                            <h3>Project Two Title</h3>
-                            <p>
-                                Duplicate this card when you are ready to add more work. Replace all placeholder text, links, and images before submitting.
-                            </p>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn" id="prevProject"
+                                    aria-label="Previous project">
+                                &#8592;
+                            </button>
 
-                            <h4>Key Features</h4>
-                            <ul>
-                                <li>Describe one major feature.</li>
-                                <li>Describe another major feature.</li>
-                                <li>Describe a technical improvement.</li>
-                            </ul>
-
-                            <h4>What I Learned</h4>
-                            <p>
-                                Explain how this project demonstrates your growth as a developer.
-                            </p>
-
-                            <div class="project-links">
-                                <a class="text-link" href="https://github.com/USERNAME/REPOSITORY" target="_blank" rel="noopener">View Repository</a>
-                                <a class="text-link" href="https://example.com" target="_blank" rel="noopener">Watch Demo</a>
-                            </div>
+                            <button class="carousel-btn" id="nextProject"
+                                    aria-label="Next project">
+                                &#8594;
+                            </button>
                         </div>
-                    </article>
+                    </div>
 
+                    <div class="project-carousel" id="projectCarousel"
+                         aria-label="Featured projects" tabindex="0">
+
+                        <!-- Project One -->
+                        <article class="project-card">
+                            <img src="images/project-placeholder.svg"
+                                 alt="The Fallen Kingdom screenshot">
+
+                            <div class="project-content">
+                                <p class="project-type">C++ Console Application</p>
+                                <h3>The Fallen Kingdom</h3>
+
+                                <p>
+                                    A text-based RPG built with a custom C++
+                                    engine architecture.
+                                </p>
+
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Custom actor management system</li>
+                                    <li>Deferred actor destruction</li>
+                                    <li>Character creation and menus</li>
+                                </ul>
+
+                                <h4>What I Learned</h4>
+                                <p>
+                                    Improved my understanding of object-oriented
+                                    programming, memory management,
+                                    and engine architecture.
+                                </p>
+
+                                <div class="project-links">
+                                    <a class="text-link" href="#contact">
+                                        Request Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project Two -->
+                        <article class="project-card">
+                            <img src="images/Recompose_Screenshot.png"
+                                 alt="Recompose screenshot">
+
+                            <div class="project-content">
+                                <p class="project-type">Unreal Engine 5 / C++</p>
+                                <h3>Recompose</h3>
+
+                                <p>
+                                    A first-person psychological horror game
+                                    focused on atmosphere and exploration.
+                                </p>
+
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Interactive environment</li>
+                                    <li>Atmospheric horror events</li>
+                                    <li>C++ interaction systems</li>
+                                </ul>
+
+                                <h4>What I Learned</h4>
+                                <p>
+                                    Developing gameplay interactions and
+                                    creating immersive environments.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Project Three -->
+                        <article class="project-card">
+                            <img src="images/project-placeholder.svg"
+                                 alt="Zombie survival prototype screenshot">
+
+                            <div class="project-content">
+                                <p class="project-type">Unreal Engine 5 / C++</p>
+                                <h3>Zombie Survival Prototype</h3>
+
+                                <p>
+                                    A survival FPS prototype focusing on
+                                    responsive weapon and player systems.
+                                </p>
+
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Weapon and ammunition systems</li>
+                                    <li>Player movement and aiming</li>
+                                    <li>Interaction mechanics</li>
+                                </ul>
+
+                                <h4>What I Learned</h4>
+                                <p>
+                                    Expanded my experience developing
+                                    modular gameplay systems in C++.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="contact" class="section">
-            <div class="container narrow contact-section">
-                <p class="section-label">Contact</p>
-                <h2>Let’s Connect</h2>
-                <p>
-                    Replace the links below with your professional profiles. Do not publish your home address, student ID, personal phone number, or other private information.
-                </p>
+            <section id="contact" class="section">
+                <div class="container narrow contact-section">
+                    <p class="section-label">Contact</p>
+                    <h2>Let’s Connect</h2>
 
-                <div class="contact-links">
-                    <a class="button primary" href="https://github.com/Bradley-Musinski" target="_blank" rel="noopener">GitHub</a>
-                    <a class="button secondary" href="https://www.linkedin.com/in/bradley-musinski-9b667b191/" target="_blank" rel="noopener">LinkedIn</a>
-                    <a class="button secondary" href="mailto:bmusinski@student.fullsail.edu">Professional Email</a>
+                    <div class="contact-links">
+                        <a class="button primary" href="https://github.com/Bradley-Musinski" target="_blank" rel="noopener">GitHub</a>
+                        <a class="button secondary" href="https://www.linkedin.com/in/bradley-musinski-9b667b191/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a class="button secondary" href="mailto:bmusinski@student.fullsail.edu">Professional Email</a>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
     </main>
 
     <footer class="site-footer">
@@ -159,5 +217,6 @@
             <p>&copy; 2026 Bradley Musinski. Built with HTML, CSS, GitHub, and GitHub Pages.</p>
         </div>
     </footer>
+    <script src="js/projects.js" defer></script>
 </body>
 </html>

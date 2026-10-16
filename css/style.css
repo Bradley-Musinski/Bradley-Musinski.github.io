@@ -86,7 +86,7 @@ a {
 
 .hero {
     padding: 7rem 0 6rem;
-    background: linear-gradient(135deg, #111018 0%, #211b31 100%);
+    background: linear-gradient(135deg, #361111 0%, #191431 100%);
 }
 
 .hero-content {
@@ -304,5 +304,114 @@ h4 {
 
     .hero {
         padding-top: 4.5rem;
+    }
+}
+
+
+/* Projects heading */
+
+.projects-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+/* Carousel layout */
+
+.project-carousel {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 4px 4px 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #b995ff #221d2c;
+    overscroll-behavior-x: contain;
+}
+
+    /* Project cards */
+
+    .project-carousel .project-card {
+        flex: 0 0 calc((100% - 24px) / 2);
+        min-width: 0;
+        scroll-snap-align: start;
+        overflow: hidden;
+    }
+
+        /* Card images */
+
+        .project-carousel .project-card img {
+            display: block;
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+
+/* Navigation buttons */
+
+.carousel-controls {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.carousel-btn {
+    width: 46px;
+    height: 46px;
+    background: #292332;
+    color: #b995ff;
+    border: 1px solid #6e568c;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+    .carousel-btn:hover {
+        background: #b995ff;
+        color: #17121f;
+        transform: scale(1.06);
+    }
+
+    .carousel-btn:focus-visible {
+        outline: 2px solid #b995ff;
+        outline-offset: 3px;
+    }
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .project-carousel .project-card {
+        flex-basis: 75%;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .projects-heading {
+        align-items: flex-end;
+    }
+
+    .project-carousel .project-card {
+        flex-basis: 90%;
+    }
+
+        .project-carousel .project-card img {
+            height: 200px;
+        }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-carousel {
+        scroll-behavior: auto;
     }
 }
